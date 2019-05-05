@@ -122,3 +122,7 @@ class Client(object):
                 return r.json()
             except Exception as e:
                 raise StandardError('Could not parse JSON response from the Kraken.io API')
+
+class StandardError(Exception):
+    pass
+,
